@@ -1,0 +1,33 @@
+{
+  "name": "swiftcard",
+  "version": "0.0.1",
+  "description": "A new koa app",
+  "author": "Leonid Ilin",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_PATH=src NODE_CONFIG_DIR=src/config node .",
+    "dev": "NODE_PATH=src NODE_CONFIG_DIR=src/config nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-leo/swiftcard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/just-leo/swiftcard/issues"
+  },
+  "homepage": "https://github.com/just-leo/swiftcard#readme",
+  "dependencies": {
+    "config": "^1.28.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-morgan": "^1.0.1",
+    "koa-ping": "^0.1.1",
+    "koa-response-time": "^2.0.0",
+    "koa-router": "^7.2.1",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.22.5"
+  }
+}
