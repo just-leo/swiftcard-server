@@ -1,9 +1,4 @@
 ## Getting Started
-
-
-### Prerequisites
-
-
 ### Install Dependencies
 
 ```
