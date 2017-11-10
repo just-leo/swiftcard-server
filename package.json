@@ -28,7 +28,8 @@
     "koa-response-time": "^2.0.0",
     "koa-router": "^7.2.1",
     "mysql2": "^1.4.2",
-    "sequelize": "^4.22.5"
+    "sequelize": "^4.22.5",
+    "sequelize-cli": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^4.10.0",
