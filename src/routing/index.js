@@ -1,10 +1,12 @@
 const router = require('koa-router')()
-const users = require('api/users/routes')
+const accounts = require('api/accounts/routes')
+const finances = require('api/finances/routes')
 
 router.get('/', ctx => {
   ctx.body = `Uptime ${process.uptime()}s`
 })
 
-router.use('/users', users)
+router.use('/accounts', accounts)
+router.use('/finances', finances)
 
 module.exports = router
