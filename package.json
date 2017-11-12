@@ -6,7 +6,6 @@
   "license": "SEE LICENSE IN LICENSE FILE",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_PATH=src NODE_CONFIG_DIR=src/config node .",
     "dev": "NODE_PATH=src NODE_CONFIG_DIR=src/config nodemon"

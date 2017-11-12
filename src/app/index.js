@@ -4,7 +4,7 @@ const bodyparser = require('koa-bodyparser')
 const logger = require('koa-morgan')
 const responseTime = require('koa-response-time')
 const health = require('koa-ping')
-const database = require('db')
+const database = require('models')
 const config = require('config')
 
 const app = new Koa()
