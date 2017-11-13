@@ -2,6 +2,7 @@
     "extends": "airbnb-base",
     "rules": {
         "semi": ["warn", "always"],
-        "quotes": ["error", "single"]
+        "quotes": ["error", "single"],
+        "no-multi-spaces": [0]
     }
 }
