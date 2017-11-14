@@ -1,6 +1,6 @@
 const Koa = require('koa')
 const router = require('routing')
-const bodyparser = require('koa-bodyparser')
+const body = require('koa-better-body')
 const logger = require('koa-morgan')
 const responseTime = require('koa-response-time')
 const health = require('koa-ping')
@@ -9,9 +9,9 @@ const config = require('config')
 
 const app = new Koa()
 app.use(responseTime())
-app.use(health('/status'));
+app.use(health('/status'))
 app.use(logger('combined'))
-app.use(bodyparser())
+app.use(body())
 app.use(router.routes())
 app.use((ctx) => { ctx.type = 'json' })
 

@@ -28,11 +28,20 @@ src/                    --> all of the source files for the application
   db/                   --> db connection establisment
 ```
 
-## Testing
-### Running Unit Tests
+## Models
 
-```
-npm test
-```
+You can simple generate new model using sequelize-cli
+
+Use the next command to see help:
+
+```node_modules/.bin/sequelize help model:generate```
+
+Or real example (table `log`):
+
+```node_modules/.bin/sequelize model:generate --name log --attributes level:string,category:string,prefix:text,message:text,log_time:integer```
 
 ## Links
+
+http://docs.sequelizejs.com/manual/tutorial/models-definition.html
+
+http://docs.sequelizejs.com/manual/tutorial/migrations.html

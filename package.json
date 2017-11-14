@@ -21,7 +21,8 @@
   "dependencies": {
     "config": "^1.28.0",
     "koa": "^2.3.0",
-    "koa-bodyparser": "^4.2.0",
+    "koa-better-body": "~3.0.4",
+    "koa-ctx-paginate": "0.0.2",
     "koa-morgan": "^1.0.1",
     "koa-ping": "^0.1.1",
     "koa-response-time": "^2.0.0",
