@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: true,
     createdAt: false,
     updatedAt: false,
+    deletedAt: false,
     classMethods: {
       associate: function(models) {
         // associations can be defined here
