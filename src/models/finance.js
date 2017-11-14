@@ -1,7 +1,10 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var finance = sequelize.define('finance', {
-    ID: DataTypes.INTEGER,
+    ID: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+    },
     ClassID: {
       type: DataTypes.INTEGER,
       allowNull: false,
